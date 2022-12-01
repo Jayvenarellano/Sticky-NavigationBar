@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*--NavigationBar--*/
+nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+/*--NavigationBar Content--*/
+nav .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*--NavigationBar Logo--*/
+.nav-content .logo a{
+    font-size:  35px;
+    font-weight: 500;
+    color: #000;
+}
+
+/*--NavigationBar Link--*/
+.nav-content .nav-link{
+    display: flex;
+    align-items: center;
+}
+
+.nav-content .nav-link li{
+    list-style: none;
+    margin: 0 10px;
+}
+.nav-link li a{
+    font-size:  18px;
+    font-weight: 500;
+    color: #000;
+    padding: 10px 4px;
+}
+
+
+/*--NavigationBar Sticky (While Scroll down)--*/
+nav.sticky-nav{
+    background-color: #FF5733;
+    padding:  20px;
+    transition: all .5s ease;
+    box-shadow: -5px 0 10px rgba(0,0,0,11);
+}
+
+nav.sticky-nav .nav-content .logo a{
+    color: #fff;
+}
+
+nav.sticky-nav .nav-link li a{
+    color: #fff;
+}
+
+/*--Home Section--*/
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("image/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*--Home Section2--*/
+.text{
+    padding: 40px 80px;
+    text-align: center;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.1);
+}
+
+.text h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #4070f4;
+}
